@@ -1,0 +1,198 @@
+.header {
+  width: 100%;
+  padding: 10px 0 10px 0;
+  background-color: #fbeec1;
+  font-family: "Inter-Regular", sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo {
+  width: 128px;
+  height: 76px;
+}
+
+.header__logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  list-style-type: none;
+}
+
+.menu__element {
+  font-family: "Inter-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.menu__element:not(:first-child) {
+  margin-left: 28px;
+}
+
+.menu__element a {
+  text-decoration: none;
+  color: #513d24;
+}
+
+/*** banner ***/
+
+.banner {
+  width: 100%;
+  min-height: 599px;
+  background: no-repeat center/cover url(./../img/banner.jpg);
+}
+
+.banner__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 599px;
+}
+
+.banner__title {
+  display: block;
+  position: relative;
+  font-family: "Inter-Black";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  color: #ffffff;
+}
+
+.banner__title::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 991px;
+  height: 4px;
+  background: #fbeec1;
+  bottom: -27px;
+}
+
+/*** teachers ***/
+
+.title {
+  font-family: "Inter-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 44px;
+  color: #513d24;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  padding-top: 20px;
+}
+
+.teachers__wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 41px 90px;
+  margin-top: 36px;
+}
+
+.teacher {
+  max-width: 302px;
+  padding-bottom: 31px;
+  position: relative;
+}
+
+.teacher__bgImg {
+  width: 250px;
+  height: 250px;
+  background: #fbeec1;
+  border-radius: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+
+.teacher__bgImg img {
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.teacher__name {
+  font-family: "Inter-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #000000;
+  text-align: center;
+  margin-top: 12px;
+}
+
+.teacher__desc {
+  font-family: "Inter-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #000000;
+  margin-top: 12px;
+}
+
+.line {
+  position: absolute;
+  width: 866px;
+  height: 1px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  background: #513d24;
+}
+
+/*** history ***/
+
+.history {
+  width: 100%;
+  background: rgba(251, 238, 193, 0.2);
+  min-height: 490px;
+}
+
+.history__wrapper {
+  margin-top: 30px;
+  font-family: "Inter-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.history__wrapper ul {
+  list-style-type: none;
+}
+
+.history__wrapper img {
+  display: block;
+  float: left;
+  width: 313px;
+  height: 268px;
+  margin: 0px 60px 60px 0;
+}
