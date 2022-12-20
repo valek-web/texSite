@@ -145,4 +145,13 @@
   .open {
     display:flex;
   }
+  .teacher {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .history__wrapper img {
+    float: none;
+    margin:  0 auto;
+  }
 }
