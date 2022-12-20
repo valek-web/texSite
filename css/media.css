@@ -1,0 +1,148 @@
+@media screen and (max-width: 1400px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .banner__title::before {
+    width: 700px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+  .teachers__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 40px;
+    margin-top: 20px;
+  }
+  .line {
+    display: none;
+  }
+
+  .new__title {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .news__wrapper {
+    grid-template-columns: 1fr 1fr;
+    gap: 21px;
+    padding: 35px 0 60px;
+  }
+  .banner__title::before {
+    width: 553px;
+  }
+
+  .partners__wrapper {
+    flex-wrap: wrap;
+  }
+
+  .footer__wrapper {
+    flex-wrap: wrap;
+  }
+
+  .footer__logo {
+    order: 0;
+  }
+  .footer__adress {
+    order: 2;
+  }
+  .footer__social {
+    order: 1;
+  }
+
+  .footer__adress {
+    margin-top: 15px;
+  }
+
+  .footer__adress-item:not(:first-child) {
+    margin-top: 9px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+  .banner__title::before {
+    width: 90%;
+  }
+  .history__wrapper img {
+    margin: 0px 15px 15px 0;
+  }
+
+  .new__link::before {
+    width: 210px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 95%;
+  }
+  .banner__title {
+    font-size: 25px;
+  }
+
+  .teachers__wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .news__wrapper {
+    grid-template-columns: 1fr;
+    padding: 35px 0 20px;
+  }
+  .title {
+    font-size: 28px;
+  }
+  .banner__title::before {
+    width: 250px;
+  }
+  .history__wrapper img {
+    width: 300px;
+  }
+  .history {
+    padding-bottom: 20px;
+  }
+  .menu {
+    background: #fbeec1;
+    position: fixed;
+    height: 110vh;
+    width: 90vw;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100%);
+    transition: 0.3s all;
+    z-index: 3;
+  }
+
+  .close {
+    display: block;
+  }
+
+  .menu_isActive {
+    transform: translateX(0)
+  }
+  .menu__element:not(:first-child) {
+    margin-left: 0;
+    margin-top: 12px;
+  }
+  .open {
+    display:flex;
+  }
+}
